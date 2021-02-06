@@ -40,8 +40,7 @@ afterEvaluate {
                 groupId = "com.github.muth0mi"
                 artifactId = "checki"
                 version = "0.0.1"
-//                from(components["main"])
-                artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+                from(components["release"])
             }
         }
     }
