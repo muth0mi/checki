@@ -37,7 +37,6 @@ android {
 //    website = 'https://github.com/jumadeveloper/AndroidNetworkManager'
 //}
 
-
 dependencies {
     implementation(Libs.AndroidX.Lifecycle.livedata)
 

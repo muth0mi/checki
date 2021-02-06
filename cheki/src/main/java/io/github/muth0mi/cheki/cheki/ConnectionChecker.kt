@@ -9,9 +9,17 @@ import android.net.NetworkRequest
 import android.util.Log
 import androidx.lifecycle.LiveData
 
-const val TAG = "ConnectionChecker"
+private const val TAG = "ConnectionChecker"
 
-class ConnectionChecker(context: Context) : LiveData<Boolean>() {
+/**
+ * A livedata object containing the current network availability status.
+ *
+ * This class checks whether or not network connection is available.
+ *
+ * @param context application context to use.
+ * @constructor Obtain a livedata object with the connection status.
+ */
+open class ConnectionChecker(context: Context) : LiveData<Boolean>() {
     private lateinit var networkCallback: ConnectivityManager.NetworkCallback
     private val cm = context.getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
     private val validNetworks: MutableSet<Network> = HashSet()
