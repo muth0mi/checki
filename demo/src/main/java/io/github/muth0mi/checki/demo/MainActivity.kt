@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MaterialTheme { ChekiDemoApp() }
+            MaterialTheme { DemoApp() }
         }
     }
 
     @Composable
-    fun ChekiDemoApp() {
+    fun DemoApp() {
         Scaffold(
             bodyContent = {
                 /*
