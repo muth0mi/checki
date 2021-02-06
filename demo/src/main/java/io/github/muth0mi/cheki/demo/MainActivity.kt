@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
     @Composable
     fun ChekiDemoApp() {
         Scaffold(
-            topBar = { TopAppBar(title = { Text(text = "Cheki Demo") }) },
             bodyContent = {
                 ConnectionChecker(this).observe(this, { connected ->
                 })
