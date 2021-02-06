@@ -1,92 +1,62 @@
-# Android Network Manager
+# Android Network and Internet Monitor
 
-A Simple Android library to check various types of network connections, to allow an app check internet connectivity status before making HTTP Requests.
+An Android library to check for active network connections as well as internet connectivity before making HTTP(S) requests.
 
-## Getting Started
-
-These instructions will help you set up this library easily on your current project and working in no time. You only need a few configurations to start working!
 
 ## Installing
 
-To be able to use the following library, you will need to add the following gradle dependency in your build.gradle(module:app) file
+To be able to use the library, you will need to add the following dependency in your module gradle file.
 
+Groovy:
+```
+implementation 'com.github.jumadeveloper:networkmanager:0.0.2'
+```
+Kotlin-DSL: 
 ```
 implementation 'com.github.jumadeveloper:networkmanager:0.0.2'
 ```
 
 Sync Project, and start using the library instantly on your project.
 
-If you are using Maven, add it using :
 
-```
-<dependency>
-  <groupId>com.github.jumadeveloper</groupId>
-  <artifactId>networkmanager</artifactId>
-  <version>0.0.2</version>
-  <type>pom</type>
-</dependency>
-```
-That is the basic set up needed to be able to use the library in your applications!
-
-## Permissions
-
-A step by step to set up Android Network Manager in your project.
-
-First, we need to add this permission to our Android Manifest file :
-
-```
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-```
-
-If you are using this Library, this means your Application is using Internet, so don't forget the following permission also:
-
-```
-<uses-permission android:name="android.permission.INTERNET"/>
-```
-
-Also, for android M and above, you must request the runtime permission for `ACCESS_NETWORK_STATE`.
-
-That's it, you have set up the required permissions and ready to go!
-
-## Quick Example
+## Usage
 
 You can use it in both Android Activities and Fragments, as shown using the code snippets below. You can now replace the toasts with a call to make your HTTP Request now!
-```java
-import com.androidstudy.networkmanager.Monitor;
-import com.androidstudy.networkmanager.Tovuti;
+```kotlin
+import io.github.muth0mi.checki.*
+
 ...
 
-public class MyActivity extends Activity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(...);
-
-        Tovuti.from(this).monitor(new Monitor.ConnectivityListener(){
-          @Override
-          public void onConnectivityChanged(int connectionType, boolean isConnected, boolean isFast){
-            // TODO: Handle the connection...
-          }
-        });
-    }
-
-    @Override
-    protected void onStop(){
-      Tovuti.from(this).stop();
-      super.onStop();
-    }
-}
+  // Observe Network Connection
+  ConnectionChecker(this).observe(this, { connected ->
+      // Do your thing with [connected]
+  })
+  
+  // Observe Internet Connection
+  InternetChecker(this).observe(this, { online ->
+      // Do your thing with [online]
+  })
+  
+  // For Jetpack compose, you can observe as follows
+  val connected = ConnectionChecker(this).observeAsState(false).value
+  val online = InternetChecker(this).observeAsState(false).value
+  
+...
 ```
+
 
 ## Contributing and Issues
 
 Please feel free to contribute or open issues, if any and I will be happy to help out!
 
-## Authors
 
-* **Juma Allan** - Android Engineer, [Twiga Foods](http://twigafoods.com)
-* **Elvis Chweya** - [Android Developer](https://github.com/chweez)
-* **Ido Monzon** - [Web & Applications Developer](https://github.com/idomo)
+## Commendations
+
+Special thanks to the following people for the inspiration to create this library:
+
+* **[Juma Allan](https://github.com/jumaallan)** for [AndroidNetworkManager](https://github.com/jumaallan/AndroidNetworkManager.git)
+* **[Juma Allan](https://github.com/mitchtabian)** for [food2fork.ca Compose App](https://github.com/mitchtabian/food2fork-compose.git)
+
 
 ## License
 
