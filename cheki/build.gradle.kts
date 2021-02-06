@@ -39,6 +39,8 @@ android {
 
 
 dependencies {
+    implementation(Libs.AndroidX.Lifecycle.livedata)
+
     testImplementation(Libs.junit)
     androidTestImplementation(Libs.AndroidX.Test.Ext.junit)
     androidTestImplementation(Libs.AndroidX.Test.espressoCore)

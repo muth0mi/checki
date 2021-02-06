@@ -1,4 +1,4 @@
 rootProject.name = "Cheki"
 
-include(":app")
+include(":demo")
 include(":cheki")
