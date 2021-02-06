@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cheki.iml" filepath="$PROJECT_DIR$/.idea/modules/cheki.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cheki.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cheki.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/networkmanager/cheki.networkmanager.iml" filepath="$PROJECT_DIR$/.idea/modules/networkmanager/cheki.networkmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cheki.iml" filepath="$PROJECT_DIR$/.idea/modules/Cheki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cheki.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cheki.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cheki.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Cheki.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cheki/Cheki.cheki.iml" filepath="$PROJECT_DIR$/.idea/modules/cheki/Cheki.cheki.iml" />
     </modules>
   </component>
 </project>
