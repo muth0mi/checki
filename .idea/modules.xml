@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidNetworkManager.iml" filepath="$PROJECT_DIR$/AndroidNetworkManager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidNetworkManager-OG.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidNetworkManager-OG.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/networkmanager/networkmanager.iml" filepath="$PROJECT_DIR$/networkmanager/networkmanager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/networkmanager/networkmanager.iml" filepath="$PROJECT_DIR$/networkmanager/networkmanager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tovutiV1.iml" filepath="$PROJECT_DIR$/tovutiV1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cheki.iml" filepath="$PROJECT_DIR$/.idea/modules/cheki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/cheki.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/cheki.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/networkmanager/cheki.networkmanager.iml" filepath="$PROJECT_DIR$/.idea/modules/networkmanager/cheki.networkmanager.iml" />
     </modules>
   </component>
 </project>

@@ -1,24 +1,24 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
-
-publish {
-
-    groupId = 'com.github.jumadeveloper'
-    artifactId = 'networkmanager'
-    publishVersion = '0.0.2'
-    desc = 'A library to check various types of network connections, to allow an app check internet connectivity status before making HTTP Requests.'
-    licences = ['Apache-2.0']
-    repoName = 'network-manager'
-    website = 'https://github.com/jumadeveloper/AndroidNetworkManager'
-}
+//apply plugin: 'com.novoda.bintray-release'
+//
+//publish {
+//
+//    groupId = 'com.github.jumadeveloper'
+//    artifactId = 'networkmanager'
+//    publishVersion = '0.0.2'
+//    desc = 'A library to check various types of network connections, to allow an app check internet connectivity status before making HTTP Requests.'
+//    licences = ['Apache-2.0']
+//    repoName = 'network-manager'
+//    website = 'https://github.com/jumadeveloper/AndroidNetworkManager'
+//}
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -34,10 +34,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.0', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.0.1'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.0.1'
+    testImplementation  'junit:junit:4.12'
 }
