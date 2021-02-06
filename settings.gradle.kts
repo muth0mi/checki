@@ -1,4 +1,4 @@
-rootProject.name = "Cheki"
+rootProject.name = "Check Connection"
 
 include(":demo")
-include(":cheki")
+include(":checki")

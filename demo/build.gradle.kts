@@ -1,5 +1,5 @@
-import io.github.muth0mi.cheki.buildsrc.Libs
-import io.github.muth0mi.cheki.buildsrc.Cheki
+import io.github.muth0mi.checki.buildsrc.Libs
+import io.github.muth0mi.checki.buildsrc.Cheki
 
 plugins {
     id("com.android.application")
@@ -8,13 +8,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion(Cheki.compileSdkVersion)
-    buildToolsVersion(Cheki.buildToolsVersion)
+    compileSdkVersion(io.github.muth0mi.checki.buildsrc.Cheki.compileSdkVersion)
+    buildToolsVersion(io.github.muth0mi.checki.buildsrc.Cheki.buildToolsVersion)
     defaultConfig {
         applicationId = "io.github.muth0mi.cheki"
-        minSdkVersion(Cheki.minSdkVersion)
-        targetSdkVersion(Cheki.targetSdkVersion)
-        testInstrumentationRunner = Cheki.testInstrumentationRunner
+        minSdkVersion(io.github.muth0mi.checki.buildsrc.Cheki.minSdkVersion)
+        targetSdkVersion(io.github.muth0mi.checki.buildsrc.Cheki.targetSdkVersion)
+        testInstrumentationRunner = io.github.muth0mi.checki.buildsrc.Cheki.testInstrumentationRunner
         versionCode = 1
         versionName = "0.0.1"
     }
@@ -39,34 +39,34 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = Libs.AndroidX.Compose.version
-        kotlinCompilerVersion = Libs.Kotlin.version
+        kotlinCompilerExtensionVersion = io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Compose.version
+        kotlinCompilerVersion = io.github.muth0mi.checki.buildsrc.Libs.Kotlin.version
     }
 }
 
 dependencies {
-    implementation(project(":cheki"))
-    implementation(Libs.Coroutines.android)
-    implementation(Libs.material)
-    implementation(Libs.AndroidX.coreKtx)
-    implementation(Libs.AndroidX.appcompat)
-    implementation(Libs.AndroidX.Lifecycle.viewmodel)
-    implementation(Libs.AndroidX.Compose.ui)
-    implementation(Libs.AndroidX.Compose.material)
-    implementation(Libs.AndroidX.Compose.runtimeLivedata)
-    implementation(Libs.AndroidX.Compose.tooling)
-    implementation(Libs.AndroidX.Navigation.composeNavigation)
-    implementation(Libs.AndroidX.Room.runtime)
-    implementation(Libs.AndroidX.Room.ktx)
-    implementation(Libs.Accompanist.insets)
-    implementation(Libs.AndroidX.Hilt.lifecycle)
-    implementation(Libs.Hilt.hilt)
+    implementation(project(":checki"))
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.Coroutines.android)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.material)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.coreKtx)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.appcompat)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Lifecycle.viewmodel)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Compose.ui)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Compose.material)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Compose.runtimeLivedata)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Compose.tooling)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Navigation.composeNavigation)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Room.runtime)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Room.ktx)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.Accompanist.insets)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Hilt.lifecycle)
+    implementation(io.github.muth0mi.checki.buildsrc.Libs.Hilt.hilt)
 
-    kapt(Libs.AndroidX.Room.compiler)
-    kapt(Libs.AndroidX.Hilt.compiler)
-    kapt(Libs.Hilt.compiler)
+    kapt(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Room.compiler)
+    kapt(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Hilt.compiler)
+    kapt(io.github.muth0mi.checki.buildsrc.Libs.Hilt.compiler)
 
-    testImplementation(Libs.junit)
-    androidTestImplementation(Libs.AndroidX.Test.Ext.junit)
-    androidTestImplementation(Libs.AndroidX.Test.espressoCore)
+    testImplementation(io.github.muth0mi.checki.buildsrc.Libs.junit)
+    androidTestImplementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Test.Ext.junit)
+    androidTestImplementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Test.espressoCore)
 }

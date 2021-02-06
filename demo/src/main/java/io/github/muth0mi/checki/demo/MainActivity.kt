@@ -1,4 +1,4 @@
-package io.github.muth0mi.cheki.demo
+package io.github.muth0mi.checki.demo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.setContent
 import androidx.compose.ui.unit.dp
-import io.github.muth0mi.cheki.cheki.ConnectionChecker
-import io.github.muth0mi.cheki.cheki.InternetChecker
+import io.github.muth0mi.checki.ConnectionChecker
+import io.github.muth0mi.checki.InternetChecker
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

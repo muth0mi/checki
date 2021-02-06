@@ -1,4 +1,4 @@
-package io.github.muth0mi.cheki.buildsrc
+package io.github.muth0mi.checki.buildsrc
 
 object Cheki {
     const val targetSdkVersion = 30
@@ -63,13 +63,13 @@ object Libs {
             val snapshotUrl: String
                 get() = "https://androidx.dev/snapshots/builds/$snapshot/artifacts/repository/"
 
-            const val foundation = "androidx.compose.foundation:foundation:${version}"
-            const val layout = "androidx.compose.foundation:foundation-layout:${version}"
+            const val foundation = "androidx.compose.foundation:foundation:$version"
+            const val layout = "androidx.compose.foundation:foundation-layout:$version"
 
-            const val ui = "androidx.compose.ui:ui:${version}"
-            const val material = "androidx.compose.material:material:${version}"
+            const val ui = "androidx.compose.ui:ui:$version"
+            const val material = "androidx.compose.material:material:$version"
             const val runtimeLivedata = "androidx.compose.runtime:runtime-livedata:$version"
-            const val tooling = "androidx.compose.ui:ui-tooling:${version}"
+            const val tooling = "androidx.compose.ui:ui-tooling:$version"
         }
 
         object Hilt {
@@ -93,9 +93,9 @@ object Libs {
 
         object Room {
             private const val version = "2.2.5"
-            const val runtime = "androidx.room:room-runtime:${version}"
-            const val ktx = "androidx.room:room-ktx:${version}"
-            const val compiler = "androidx.room:room-compiler:${version}"
+            const val runtime = "androidx.room:room-runtime:$version"
+            const val ktx = "androidx.room:room-ktx:$version"
+            const val compiler = "androidx.room:room-compiler:$version"
         }
 
         object Lifecycle {

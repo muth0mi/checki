@@ -1,4 +1,4 @@
-package io.github.muth0mi.cheki.cheki
+package io.github.muth0mi.checki
 
 import android.content.Context
 import android.content.Context.CONNECTIVITY_SERVICE
