@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
-import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
@@ -31,8 +30,12 @@ class MainActivity : AppCompatActivity() {
     fun ChekiDemoApp() {
         Scaffold(
             bodyContent = {
+                /*
+                // Observe in non compose UI like so
                 ConnectionChecker(this).observe(this, { connected ->
+                    // Do your thing with [connected]
                 })
+                */
                 val connected = ConnectionChecker(this).observeAsState(false).value
                 val connectionStatus = if (connected) "Connected" else "Disconnected"
                 val online = InternetChecker(this).observeAsState(false).value
