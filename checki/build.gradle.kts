@@ -1,3 +1,4 @@
+import io.github.muth0mi.checki.buildsrc.Cheki
 import io.github.muth0mi.checki.buildsrc.Libs
 
 plugins {
@@ -6,12 +7,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion(io.github.muth0mi.checki.buildsrc.Cheki.compileSdkVersion)
-    buildToolsVersion(io.github.muth0mi.checki.buildsrc.Cheki.buildToolsVersion)
+    compileSdkVersion(Cheki.compileSdkVersion)
+    buildToolsVersion(Cheki.buildToolsVersion)
     defaultConfig {
-        minSdkVersion(io.github.muth0mi.checki.buildsrc.Cheki.minSdkVersion)
-        targetSdkVersion(io.github.muth0mi.checki.buildsrc.Cheki.targetSdkVersion)
-        testInstrumentationRunner = io.github.muth0mi.checki.buildsrc.Cheki.testInstrumentationRunner
+        minSdkVersion(Cheki.minSdkVersion)
+        targetSdkVersion(Cheki.targetSdkVersion)
+        testInstrumentationRunner = Cheki.testInstrumentationRunner
         versionCode = 1
         versionName = "0.0.1"
     }

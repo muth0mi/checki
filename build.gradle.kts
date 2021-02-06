@@ -6,7 +6,6 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:7.0.0-alpha05")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21")
-//        classpath("com.novoda:bintray-release:0.5.0")
     }
 }
 
