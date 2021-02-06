@@ -9,11 +9,11 @@ To be able to use the library, you will need to add the following dependency in 
 
 Groovy:
 ```
-implementation 'comming soon'
+implementation 'com.github.muth0mi:checki:0.0.1'
 ```
 Kotlin-DSL: 
 ```
-implementation ("comming soon")
+implementation ("com.github.muth0mi:checki:0.0.1")
 ```
 
 Sync Project, and start using the library instantly on your project.
