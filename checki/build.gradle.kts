@@ -1,5 +1,4 @@
 import io.github.muth0mi.checki.buildsrc.Libs
-import io.github.muth0mi.checki.buildsrc.Cheki
 
 plugins {
     id("com.android.library")
@@ -24,23 +23,10 @@ android {
     }
 }
 
-//apply plugin: 'com.novoda.bintray-release'
-//
-//publish {
-//
-//    groupId = 'com.github.jumadeveloper'
-//    artifactId = 'networkmanager'
-//    publishVersion = '0.0.2'
-//    desc = 'A library to check various types of network connections, to allow an app check internet connectivity status before making HTTP Requests.'
-//    licences = ['Apache-2.0']
-//    repoName = 'network-manager'
-//    website = 'https://github.com/jumadeveloper/AndroidNetworkManager'
-//}
-
 dependencies {
-    implementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Lifecycle.livedata)
+    implementation(Libs.AndroidX.Lifecycle.livedata)
 
-    testImplementation(io.github.muth0mi.checki.buildsrc.Libs.junit)
-    androidTestImplementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Test.Ext.junit)
-    androidTestImplementation(io.github.muth0mi.checki.buildsrc.Libs.AndroidX.Test.espressoCore)
+    testImplementation(Libs.junit)
+    androidTestImplementation(Libs.AndroidX.Test.Ext.junit)
+    androidTestImplementation(Libs.AndroidX.Test.espressoCore)
 }
