@@ -3,6 +3,8 @@
 */build/
 */.gradle/
 
+/gradle/wrapper/gradle-wrapper.jar
+
 *.iml
 /local.properties
 /.idea/workspace.xml
