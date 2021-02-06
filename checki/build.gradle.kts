@@ -4,6 +4,7 @@ import io.github.muth0mi.checki.buildsrc.Libs
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("maven-publish")
 }
 
 android {
@@ -30,4 +31,18 @@ dependencies {
     testImplementation(Libs.junit)
     androidTestImplementation(Libs.AndroidX.Test.Ext.junit)
     androidTestImplementation(Libs.AndroidX.Test.espressoCore)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                groupId = "com.github.muth0mi"
+                artifactId = "checki"
+                version = "0.0.1"
+                from(components["java"])
+
+            }
+        }
+    }
 }
