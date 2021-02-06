@@ -9,11 +9,11 @@ To be able to use the library, you will need to add the following dependency in 
 
 Groovy:
 ```
-implementation 'com.github.jumadeveloper:networkmanager:0.0.2'
+implementation 'comming soon'
 ```
 Kotlin-DSL: 
 ```
-implementation 'com.github.jumadeveloper:networkmanager:0.0.2'
+implementation ("comming soon")
 ```
 
 Sync Project, and start using the library instantly on your project.
@@ -25,7 +25,7 @@ You can use it in both Android Activities and Fragments, as shown using the code
 ```kotlin
 import io.github.muth0mi.checki.*
 
-...
+// ...
 
   // Observe Network Connection
   ConnectionChecker(this).observe(this, { connected ->
@@ -41,7 +41,7 @@ import io.github.muth0mi.checki.*
   val connected = ConnectionChecker(this).observeAsState(false).value
   val online = InternetChecker(this).observeAsState(false).value
   
-...
+// ...
 ```
 
 
