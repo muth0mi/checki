@@ -60,4 +60,4 @@ Special thanks to the following people for the inspiration to create this librar
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/muth0mi/checki/blob/master/LICENSE).
