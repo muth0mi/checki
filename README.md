@@ -55,7 +55,7 @@ Please feel free to contribute or open issues, if any and I will be happy to hel
 Special thanks to the following people for the inspiration to create this library:
 
 * **[Juma Allan](https://github.com/jumaallan)** for [AndroidNetworkManager](https://github.com/jumaallan/AndroidNetworkManager.git)
-* **[Juma Allan](https://github.com/mitchtabian)** for [food2fork.ca Compose App](https://github.com/mitchtabian/food2fork-compose.git)
+* **[Mitch Tabian](https://github.com/mitchtabian)** for [food2fork.ca Compose App](https://github.com/mitchtabian/food2fork-compose.git)
 
 
 ## License
