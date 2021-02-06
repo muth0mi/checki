@@ -1,5 +1,3 @@
-import java.net.URI
-
 buildscript {
     repositories {
         google()
@@ -15,7 +13,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url = URI("https://jitpack.io") }
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
