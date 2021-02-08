@@ -1,4 +1,4 @@
-# Android Network and Internet Monitor
+# Android Network and Internet Monitor [![](https://jitpack.io/v/muth0mi/checki.svg)](https://jitpack.io/#muth0mi/checki)
 
 An Android library to check for active network connections as well as internet connectivity before making HTTP(S) requests.
 
