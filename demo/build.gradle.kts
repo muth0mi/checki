@@ -45,7 +45,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":checki"))
+    implementation("com.github.muth0mi:checki:0.0.1")
     implementation(Libs.material)
     implementation(Libs.AndroidX.appcompat)
     implementation(Libs.AndroidX.Compose.ui)
