@@ -5,6 +5,18 @@ An Android library to check for active network connections as well as internet c
 
 ## Installing
 
+First you need to enable the jitpack repository in your project.
+
+Groovy:
+```
+maven { url 'https://jitpack.io' }
+```
+Kotlin-DSL: 
+```
+maven { url = uri("https://jitpack.io") }
+```
+
+
 To be able to use the library, you will need to add the following dependency in your module gradle file.
 
 Groovy:
